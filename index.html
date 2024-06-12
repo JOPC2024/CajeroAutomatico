@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+    <title>Cajero Automatico</title>
+</head>
+<body>
+    <main>
+        <section>
+            <article id="panelExterior">
+                <article id="panelInterior">
+                    <article id="panelIzquierdo">
+                        <div>
+                            <button id="botonCuatroIzq"></button>
+                            <button id="botonTresIzq"></button>
+                            <button id="botonDosIzq"></button>
+                            <button id="botonUnoIzq"></button>
+                        </div>
+                    </article>
+                    <article id="panelCentral">
+                        <article id="pantalla">
+                            <article id="pantallaIzquierda">
+                                <div id="cuatroIzq"></div>
+                                <div id="tresIzq"></div>
+                                <div id="dosIzq"></div>
+                                <div id="unoIzq"></div>
+                            </article>
+                            <article id="pantallaCentral">
+                                <div id="tresCen"></div>
+                                <div id="dosCen"><p>Bienvenido al banco Internacional</p></div>
+                                <div id="unoCen"></div>
+                            </article>
+                            <article id="pantallaDerecha">
+                                <div id="cuatroDer"></div>
+                                <div id="tresDer"></div>
+                                <div id="dosDer"></div>
+                                <div id="unoDer"></div>
+                            </article>
+                        </article>
+                    </article>
+                    <article id="panelDerecho">
+                        <div>
+                            <button id="botonCuatroDer"></button>
+                            <button id="botonTresDer"></button>
+                            <button id="botonDosDer"></button>
+                            <button id="botonUnoDer"></button>
+                        </div>
+                    </article>
+                </article>
+                <article class="barraVerde" id="barraVerde3">
+                    <div></div>
+                </article>
+                <article class="barraGris">
+                    <div>
+                        <div></div>
+                    </div>
+                </article>
+            </article>
+            <article id="InputOutput">
+                <p>ATM</p>
+                <article class="barraVerde" id="barraVerde1">
+                    <div></div>
+                </article>
+                <article class="barraGris">
+                    <div></div>
+                </article>
+                <article class="barraVerde" id="barraVerde2">
+                    <div></div>
+                </article>
+                <article class="barraGris">
+                    <div></div>
+                    <div id="card" onclick="insertarTarjeta()">
+                        <div></div>
+                    </div>
+                </article>
+            </article>
+            <article id="panelTeclado">
+                <article id="teclado">
+                    <article id="tecladoNumerico">
+                        <div>
+                            <button onclick="tecla(1)">1</button><button onclick="tecla(2)">2</button><button onclick="tecla(3)">3</button>
+                        </div>
+                        <div>
+                            <button onclick="tecla(4)">4</button><button onclick="tecla(5)">5</button><button onclick="tecla(6)">6</button>
+                        </div>
+                        <div>
+                            <button onclick="tecla(7)">7</button><button onclick="tecla(8)">8</button><button onclick="tecla(9)">9</button>
+                        </div>
+                        <div>
+                            <button>&nbsp;</button><button onclick="tecla(0)">0</button><button>&nbsp;</button>
+                        </div>
+                    </article>
+                    <article id="tecladoAction">
+                        <button id="cancel" onclick="tecla('cancel')">CANCEL</button>
+                        <button id="clean" onclick="tecla('clean')">CLEAN</button>
+                        <button>&nbsp;</button>
+                        <button id="enter" onclick="tecla('enter')">ENTER</button>
+                    </article>
+                </article>
+            </article>
+            <article id="tarjetas">
+                <div class="tarjetaBan" id="tarjeta1" onclick="seleccionarTarjeta(1)">
+                    <div></div>
+                </div>
+                <div class="tarjetaBan" id="tarjeta2" onclick="seleccionarTarjeta(2)">
+                    <div></div>
+                </div>
+                <div class="tarjetaBan" id="tarjeta3" onclick="seleccionarTarjeta(3)">
+                    <div></div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

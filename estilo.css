@@ -1,0 +1,246 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #ADADAD;
+}
+section{
+    background-color:#53586B;
+    margin:70px auto;
+    width: 85%;
+    height: 500px;
+    border:2px solid black;
+    display: flex;
+    flex-wrap: wrap; 
+}
+#panelExterior{
+    background-color:#343843;
+    margin-top:30px;
+    margin-left:30px;
+    width: 60%;
+    height: 300px;
+}
+#panelInterior{
+    width: 100%;
+    height: 65%;
+    display:flex;
+}
+#panelIzquierdo{
+    width: 20%;
+    height: 100%;
+}
+#panelIzquierdo > div{
+    width: 50%;
+    height: 65%;
+    float:right;
+    margin-top:20px;
+}
+#panelIzquierdo > div > button{
+    width:100%;
+    height:20%;
+    margin-bottom: 5px;  
+}
+#panelCentral{
+    width: 60%;
+    height: 100%;
+}
+#panelCentral > #pantalla{
+    background-color: aqua;
+    margin:10px auto;
+    width: 90%;
+    height: 80%;
+    font-size: 10px;
+    font-family: arial;
+    text-align: center;
+    display: flex;
+}
+#panelCentral > #pantalla > #pantallaIzquierda{
+    width: 25%;
+}
+#panelCentral > #pantalla > #pantallaIzquierda > div{
+    width: 100%;
+    height: 23%;
+}
+#panelCentral > #pantalla > #pantallaCentral{
+    width: 50%;
+}
+#panelCentral > #pantalla > #pantallaCentral > div{
+    width: 100%;
+    height: 31%;
+}
+#panelCentral > #pantalla > #pantallaCentral > div > input{
+    width: 90%;
+    background-color: transparent;
+    border-style: none;
+    text-align-last: center;
+    border:2px solid black;
+}
+#panelCentral > #pantalla > #pantallaDerecha{
+    width: 25%;
+}
+#panelCentral > #pantalla > #pantallaDerecha > div{
+    width: 100%;
+    height: 23%;
+}
+#panelDerecho{
+    width: 20%;
+    height: 100%;
+    display: block;
+}
+#panelDerecho> div{
+    width: 50%;
+    height: 65%;
+    float:left;
+    margin-top:20px;
+}
+#panelDerecho > div > button{
+    width:100%;
+    height:20%; 
+    margin-bottom: 5px;
+}
+#unoIzq > p{
+    margin-top: 20px;
+}
+#unoDer > p{
+    margin-top: 0px;
+}
+#dosDer> p{
+    margin-top:20px;
+}
+#unoCen > p{
+    margin-top:15px;
+}
+#InputOutput{
+    margin-top:30px;
+    margin-left: 2%;
+    width: 30%;
+    height: 300px;
+}
+#InputOutput > p{
+    font-size:50px;
+    color:white;
+    text-align: center;
+    font-family:arial;
+}
+.barraVerde{
+    width: 90%;
+    height: 15px;
+    margin:20px auto 0px auto;
+    background-color: black;
+    padding-top: 10px;
+
+}
+.barraVerde > div{
+    background-color: lime;
+    width: 80%;
+    height: 5px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.barraGris{
+    background-color:#D4D5D6;
+    margin:10px auto 0px auto;
+    width: 75%;
+    height: 25px;
+    padding-top: 10px;
+}
+.barraGris > div{
+    background-color: #787878;
+    width: 80%;
+    height: 15px;
+    margin:0px auto;
+}
+#barraVerde2{
+    margin-top:70px;
+}
+#card{
+    background-color: aqua;
+    width: 65%;
+    height: 70px;
+    border-radius: 0px 0px 5px 5px;
+    visibility: hidden;
+}
+#card > div{
+    background-color: black;
+    height: 100%;
+    width:20%;
+    margin-left:70%;
+}
+#panelTeclado{
+    background-color: #343843;
+    width: 60%;
+    height: 110px;
+    margin-top:25px;
+    margin-left:30px;
+    padding: 10px 0px 10px 0px;
+}
+#panelTeclado > #teclado{
+    margin: 0px auto;
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+#panelTeclado > #teclado > #tecladoNumerico{
+    width: 70%;
+    height: 100%;
+}
+#panelTeclado > #teclado > #tecladoNumerico > div{
+    margin:5px;
+}
+#panelTeclado > #teclado > #tecladoNumerico > div > button{
+    width: 33%;
+}
+#panelTeclado > #teclado > #tecladoAction{
+    width: 30%;
+}
+#panelTeclado > #teclado > #tecladoAction > button{
+    float: right;
+    width: 90%;
+    height: 22%;
+    margin-top:4px;
+}
+#cancel{
+    background-color: red;
+    border-style: none;
+}
+#clean{
+    background-color: yellow;
+    border-style: none;
+}
+#enter{
+    background-color: green;
+    border-style: none;
+}
+#tarjetas{
+    width: 30%;
+    height: 70px;
+    margin-top:60px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+}
+#tarjetas > .tarjetaBan{
+    border:2px solid black;
+    width: 20%;
+    margin:5px auto 5px auto;
+    border-radius: 5px;
+
+}
+#tarjetas > .tarjetaBan > div{
+
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    margin-left: 70%;
+
+}
+#tarjeta1{
+    background-color: aqua;
+}
+#tarjeta2{
+    background-color: orange;
+}
+#tarjeta3{
+    background-color: red;
+}
