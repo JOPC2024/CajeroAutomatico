@@ -112,8 +112,11 @@ function tecla(teclaInt)
         {
             if(!Number.isNaN(inputRetirar))
             {
-                this.saldo-=parseInt(inputRetirar);
-                cuentas[this.posicion].saldo-=parseInt(inputRetirar);
+                if((this.saldo - parseInt(inputRetirar)) >= 10)
+                {
+                    this.saldo-=parseInt(inputRetirar);
+                    cuentas[this.posicion].saldo-=parseInt(inputRetirar);
+                }
             }
             this.passTarjeta();
         }
@@ -146,8 +149,11 @@ function tecla(teclaInt)
         {
             if(!Number.isNaN(inputDepositar))
             {
-                this.saldo+=parseInt(inputDepositar);
-                cuentas[this.posicion].saldo+=parseInt(inputDepositar);
+                if(this.saldo + parseInt(inputDepositar) <= 990)
+                {
+                    this.saldo+=parseInt(inputDepositar);
+                    cuentas[this.posicion].saldo+=parseInt(inputDepositar);
+                }
             }
             this.passTarjeta();
         }
